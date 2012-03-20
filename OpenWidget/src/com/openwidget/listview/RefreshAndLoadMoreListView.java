@@ -20,9 +20,9 @@
  * limitations under the License.
  */
 
-package com.passkey1510.openwidget.listview;
+package com.openwidget.listview;
 
-import com.passkey1510.widget.R;
+import com.openwidget.R;
 
 import android.content.Context;
 import android.graphics.Bitmap;

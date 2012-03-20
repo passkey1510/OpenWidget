@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.passkey1510.openwidget.demo;
+package com.openwidget.demo;
 
 import java.util.ArrayList;
 import android.app.Activity;
@@ -21,9 +21,11 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
-import com.passkey1510.openwidget.listview.RefreshAndLoadMoreListView;
-import com.passkey1510.openwidget.listview.RefreshAndLoadMoreListView.OnLoadMoreListener;
-import com.passkey1510.openwidget.listview.RefreshAndLoadMoreListView.OnRefreshListener;
+
+import com.openwidget.demo.R;
+import com.openwidget.listview.RefreshAndLoadMoreListView;
+import com.openwidget.listview.RefreshAndLoadMoreListView.OnLoadMoreListener;
+import com.openwidget.listview.RefreshAndLoadMoreListView.OnRefreshListener;
 
 public class RefreshAndLoadMoreDemoActivity extends Activity {
 	private final static String TAG = RefreshAndLoadMoreDemoActivity.class.getSimpleName();

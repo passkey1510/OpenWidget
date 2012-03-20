@@ -19,7 +19,7 @@
  * limitations under the License.
  */
 
-package com.passkey1510.openwidget.demo;
+package com.openwidget.demo;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -44,7 +44,7 @@ public class ListSamples extends ListActivity {
         super.onCreate(savedInstanceState);
         
         Intent intent = getIntent();
-        String path = intent.getStringExtra("com.passkey1510.openwidget.demo.Path");
+        String path = intent.getStringExtra("com.openwidget.demo.Path");
         
         if (path == null) {
             path = "";
@@ -60,7 +60,7 @@ public class ListSamples extends ListActivity {
         List<Map<String, Object>> myData = new ArrayList<Map<String, Object>>();
 
         Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
-        mainIntent.addCategory("com.passkey1510.openwidget.demo.SAMPLE");
+        mainIntent.addCategory("com.openwidget.demo.SAMPLE");
 
         PackageManager pm = getPackageManager();
         List<ResolveInfo> list = pm.queryIntentActivities(mainIntent, 0);
@@ -131,7 +131,7 @@ public class ListSamples extends ListActivity {
     protected Intent browseIntent(String path) {
         Intent result = new Intent();
         result.setClass(this, ListSamples.class);
-        result.putExtra("com.passkey1510.openwidget.demo.Path", path);
+        result.putExtra("com.openwidget.demo.Path", path);
         return result;
     }
 

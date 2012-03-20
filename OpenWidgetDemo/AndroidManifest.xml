@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.passkey1510.openwidget.demo"
+    package="com.openwidget.demo"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -19,11 +19,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RefreshAndLoadMoreDemoActivity"
+            android:name="com.openwidget.demo.RefreshAndLoadMoreDemoActivity"
             android:label="Refresh and Load More List">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.passkey1510.openwidget.demo.SAMPLE" />
+                <category android:name="com.openwidget.demo.SAMPLE" />
             </intent-filter>
         </activity>
     </application>
